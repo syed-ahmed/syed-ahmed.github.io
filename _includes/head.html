@@ -7,6 +7,7 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
@@ -17,5 +18,14 @@
       var host = "tousif.xyz";
       if ((host == window.location.host) && (window.location.protocol != "https:"))
           window.location.protocol = "https";
+  </script>
+  <script type="text/javascript">
+      function ran_col() { //function name
+          var color = '#'; // hexadecimal starting symbol
+          var letters = ['000000','607D8B','FF6D00','3F51B5','880E4F','2196F3','8BC34A','9E9E9E']; //Set your colors here
+          color += letters[Math.floor(Math.random() * letters.length)];
+          document.getElementById('posts').style.backgroundColor = color; // Setting the random color on your div element.
+      }
+
   </script>
 </head>

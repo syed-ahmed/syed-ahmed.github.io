@@ -3,18 +3,16 @@
 
   {% include head.html %}
 
-  <body>
+  <body onload="return ran_col()">
+    <div id="posts" class="demo-layout-transparent mdl-layout mdl-js-layout">
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+      <main class="mdl-layout__content">
+          {{ content }}
+      </main>
+    <!-- {% include footer.html %} -->
     </div>
-
-    {% include footer.html %}
-
   </body>
 
 </html>
