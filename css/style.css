@@ -10,8 +10,9 @@
 }
 
 
-#resumeButton, #notesButton{
-  color: black;
+#educationButton, #expButton, #researchButton, #talksButton, #teachingButton, #projectsButton, #resumeButton, #notesButton{
+  
+  padding: 1px;
 }
 
 #drawertitle, #smallscreentitle a{
@@ -19,8 +20,8 @@
   text-decoration: none;
 }
 
-#resumeLink, #notesLink{
-  padding: 10px;
+#educationLink, #expLink, #researchLink, #talksLink, #teachingLink, #projectsLink, #resumeLink, #notesLink{
+  padding: 3px;
 }
 
 

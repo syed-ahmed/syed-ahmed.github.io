@@ -1,18 +1,54 @@
 <header class="mdl-layout__header mdl-layout__header--transparent">
   <div class="mdl-layout__header-row">
     <!-- Title -->
-    <a class="mdl-layout-title" href="/"><span>Syed Tousif Ahmed</span></a>
+    
     <!-- Add spacer, to align navigation to the right -->
-    <div class="mdl-layout-spacer"></div>
+    <!-- <div class="mdl-layout-spacer"></div> -->
     <!-- Navigation -->
     <nav class="mdl-navigation mdl-layout--large-screen-only">
-      <a id="resumeLink"class="mdl-navigation__link" href="{{ "/files/Syed-Tousif-Ahmed-CMPE-Resume.pdf" | prepend: site.baseurl }}">
-        <button id="resumeButton"class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        <a d="homeLink" class="mdl-navigation__link" href="{{ site.baseurl }} {% link index.html %}">
+          <button id="homeLink" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+            Home
+          </button>
+        </a>
+        <a d="educationLink" class="mdl-navigation__link" href="{{ site.baseurl }} {% link education.html %}">
+          <button id="educationButton" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+            Education
+          </button>
+        </a>
+        <a d="expLink" class="mdl-navigation__link" href="{{ site.baseurl }} {% link experience.html %}">
+          <button id="expButton" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+            Work Experience
+          </button>
+        </a>
+        <a d="researchLink" class="mdl-navigation__link" href="{{ site.baseurl }} {% link research.html %}">
+          <button id="researchButton" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+            Research
+          </button>
+        </a>
+        <a d="talksLink" class="mdl-navigation__link" href="{{ site.baseurl }} {% link talks.html %}">
+          <button id="talksButton" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+            Talks
+          </button>
+        </a>
+        <a d="teachingLink" class="mdl-navigation__link" href="{{ site.baseurl }} {% link teaching.html %}">
+          <button id="teachingButton" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+            Teaching
+          </button>
+        </a>
+      <a d="projectsLink" class="mdl-navigation__link" href="{{ site.baseurl }} {% link projects.html %}">
+        <button id="projectsButton" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+          Projects
+        </button>
+      </a>
+      <a id="resumeLink" class="mdl-navigation__link" href="{{ " /files/Syed-Tousif-Ahmed-CMPE-Resume.pdf
+        " | prepend: site.baseurl }}">
+        <button id="resumeButton" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
           Resume
         </button>
       </a>
-      <a d="notesLink"class="mdl-navigation__link" href="https://www.gitbook.com/@syed-ahmed/">
-        <button id="notesButton"class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+      <a d="notesLink" class="mdl-navigation__link" href="https://www.gitbook.com/@syed-ahmed/">
+        <button id="notesButton" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
           Notes
         </button>
       </a>
@@ -20,12 +56,17 @@
   </div>
 </header>
 <div id="smallscreentitle" class="mdl-layout__header-row mdl-layout--small-screen-only">
-  <a class="mdl-layout-title" href="/"><span>Syed Tousif Ahmed</span></a>
+  <a class="mdl-layout-title" href="/">
+    <span>Syed Tousif Ahmed</span>
+  </a>
 </div>
 <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-  <a id="drawertitle" class="mdl-layout-title" href="/"><span>Syed Tousif Ahmed</span></a>
+  <a id="drawertitle" class="mdl-layout-title" href="/">
+    <span>Syed Tousif Ahmed</span>
+  </a>
   <nav class="mdl-navigation">
-    <a style="text-decoration: none;"class="mdl-navigation__link" href="{{ "/files/Syed-Tousif-Ahmed-CMPE-Resume.pdf" | prepend: site.baseurl }}">Resume</a>
+    <a style="text-decoration: none;" class="mdl-navigation__link" href="{{ " /files/Syed-Tousif-Ahmed-CMPE-Resume.pdf
+      " | prepend: site.baseurl }}">Resume</a>
     <a style="text-decoration: none;" class="mdl-navigation__link" href="https://www.gitbook.com/@syed-ahmed/">Notes</a>
   </nav>
 </div>
