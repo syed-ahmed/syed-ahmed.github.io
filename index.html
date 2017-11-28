@@ -1,8 +1,8 @@
 --- 
 layout: default 
 ---
-<div class="mdl-grid portfolio-max-width">
-  <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--16dp mdl-cell--4-col-phone">
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+  <div class="mdl-cell mdl-cell--12-col mdl-card mdl-cell--4-col-phone">
     <div id="cf4a" class="mdl-card__media">
       <img src="{{ " /images/profile-pic1.jpg " | prepend: site.baseurl }}" style="border-radius: 50%" width="200px" height="200px">
       <img src="{{ " /images/profile-pic2.jpg " | prepend: site.baseurl }}" style="border-radius: 50%" width="200px" height="200px">
@@ -45,4 +45,122 @@ layout: default
       </a>
     </div>
   </div>
-</div>
+</section>
+<section id="educationSection" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+  <div class="mdl-card mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+      <h4 class="mdl-cell mdl-cell--12-col">Education</h4>
+      <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+       <img src="{{ " /images/tiger_walking_rit_color.jpg " | prepend: site.baseurl }}" width="80%">
+      </div>
+      <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+        <h5>Rochester Institute of Technology | Rochester, New York, USA</h5>
+        BS in Computer Engineering<br>
+        Minor in Mathematics<br>
+        Expected Graduation: May 2018<br><br>
+      </div>
+      <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+          <img src="{{ " /images/oaktree.png " | prepend: site.baseurl }}" width="80%">
+      </div>
+      <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+        <h5>Oaktree International School | Calcutta, India</h5>
+        International Baccalaureate Diploma<br>
+        Math HL, Physics HL, Chemistry HL, English SL, French SL, Economics SL<br>
+        Extended Essay: Mathematics (Lucas-Lehmer Algorithm vs Trial Division)<br>
+        Graduated: May 2013<br><br>
+      </div>
+      <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+          <img src="{{ " /images/sb.png " | prepend: site.baseurl }}" width="80%">
+          
+      </div>
+      <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+        <h5>South Breeze School | Dhaka, Bangladesh</h5>
+        Edexcel IGCSE<br>
+        Graduated: May 2010  <br><br>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<section id="workSection" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+      <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+        <h4 class="mdl-cell mdl-cell--12-col">Work Experience</h4>
+        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+            <img src="{{ " /images/cat.png " | prepend: site.baseurl }}" width="80%">
+        </div>
+        <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+          <h5>Research Assistant | September 2016 - May 2017; August 2017 - Present</h5>
+          <h6>Center on Access Technology, NTID, RIT | Rochester, NY</h6>
+          - Worked on developing a research tool that investigates the different needs of the deaf/hard of hearing population<br>
+          - Integrated Automatic Speech Recognition Engines into the tool<br>
+          - Worked on Video to Text model for American Sign Language<br>
+          - Languages/Platforms used: TensorFlow, Android Development, Node.js<br><br>
+        </div>
+        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+         <img src="{{ " /images/nvidia.png " | prepend: site.baseurl }}" width="80%">
+        </div>
+        <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+          <h5>Deep Learning Software Intern | May 2017 - August 2017</h5>
+          <h6>NVIDIA Corporation | DL Frameworks Team | Santa Clara, CA</h6>
+          - Worked on different projects for Caffe2 and Tensorflow in the Deep Learning Frameworks Team<br>
+          - Designed and implemented Universal Framework Format Format (UFF) Converters for TensorFlow and Caffe2, released in TensorRT 3.0 RC<br>
+          - Wrote Sequence to Sequence Framework for Caffe2 <br>
+          - Analyzed performance of Caffe2 kernels for Seq2Seq models and made optimizations<br>
+          - Languages/Technologies used: C++, Python, Protobuf, CUDA, Caffe2, TensorFlow<br><br>
+        </div>
+        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+            <img src="{{ " /images/fetlab.png " | prepend: site.baseurl }}" width="80%">
+        </div>
+        <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+          <h5>Research Assistant | September 2015 - December 2015; August 2016 - May 2017</h5>
+          <h6>FETLab, GCCIS, RIT | Rochester, NY</h6>
+          - Assisted in research projects in the area of human-computer interaction. The focus of the research projects was on wearable and mobile computing and how to make personal fabrication technology such as 3D printers, laser cutters, and CNC routers easier to use by non-experts<br>
+          - Wrote code for a kinect and projector based project for augmenting fabrication in laser cutters, 3D printers etc.<br>
+          - Built an automatic speech recognition system that classifies sounds of actions on everyday objects<br>
+          - Wrote Android Wear applications<br>
+          - Languages/Technologies used: Python, C#, Java, Android Development<br><br>
+        </div>
+        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+            <img src="{{ " /images/nextdroid.png " | prepend: site.baseurl }}" width="80%">
+        </div>
+        <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+            <h5>Deep Learning Engineering Intern | June 2016 - August 2016</h5>
+            <h6>NextDroid, LLC (Startup) | Cambridge, MA</h6>
+          - Wrote neural network models for road image segmentation for a semi-autonomous/self-driving car at NextDroid LLC., a startup based in Cambridge, MA<br>
+          - Wrote image segmentation web interface for mass data collection, that decreased data collection cost by 60%<br>
+          - Wrote models in caffe, torch and tensorflow<br>
+          - Wrote unit tests in tensorflow<br>
+          - Wrote custom operation layer in tensorflow<br>
+          - Platforms/Frameworks used: Caffe, Tensorflow, Torch, CUDA, NVIDIA Jetson TX1, NVIDIA DRIVE PX<br>
+          - Languages used: Python, C++, Lua<br><br>
+          
+        </div>
+        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+            <img src="{{ " /images/ahold_delhaize_logo.png " | prepend: site.baseurl }}" width="80%">
+            
+        </div>
+        <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+            <h5>Computer Vision Developer (Co-op) | January 2016 - May 2016</h5>
+            <h6>Ahold Delhaize | Quincy, MA</h6>
+            - Worked on computer vision related projects at the Propulsion Labs at Ahold USA<br>
+            - Used tensorflow and caffe to do transfer learning for proof of concept on product image recognition<br>
+            - Used OpenCV for data augmentation and production of synthetic images<br>
+            - Used OpenCV and OpenGL ES to make an augmented really iOS app that gives a location-aware shopping experience. Wrote UI elements and their functionality in Redux.js and React.js<br>
+            - Languages used: Python, C++, Objective-C, JavaScript<br><br>
+        </div>
+        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+            <img src="{{ " /images/tiger_walking_rit_color.jpg " | prepend: site.baseurl }}" width="80%">
+        </div>
+        <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+          <h5>Computer Vision Research Assistant | June 2015 - December 2015</h5>
+          <h6>Discover Lab, School of Media Sciences, RIT | Rochester, NY</h6>
+          - Developed, debugged, and optimized an augmented reality app, called RocreadAR for a research project aiming at integrating different media for publishing and communication<br>
+          - Wrote Image Processing algorithms in OpenCV and Python to enhance detection and tracking of target images<br>
+          - Received NSF I-Corps Funding and assigned as the Student Team Leader to commercialize prototypes<br>
+          - Technologies used: OpenGL, OpenCV, Unity3D, Vuforia SDK, Wikitude SDK, Git, Android, iOS, Google Glass<br><br>
+        </div>
+      </div>
+      
+    </div>
+  </section>
