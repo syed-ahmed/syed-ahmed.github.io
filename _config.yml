@@ -9,11 +9,26 @@
 title: Tousif | Home
 email: syed.ahmed.emails@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Syed Tousif Ahmed is majoring in computer engineering at RIT and works 
+  there as a Research Assistant in the National Technical Institute for 
+  the Deaf. Syed's interests lie in high performance computing, machine 
+  intelligence, digital logic design, and cryptography. Syed worked on 
+  several production and startup machine intelligence teams such as 
+  NVIDIA, NextDroid LLC, and Ahold USA. He has contributed to several 
+  open source frameworks such as TensorFlow, Caffe2 and Torch. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://tousif.xyz" # the base hostname & protocol for your site
-
+url: "http://syed-ahmed.github.io"
 # Build settings
 markdown: kramdown
+twitter:
+  username: tousifsays
+social:
+  name: Syed Tousif Ahmed
+  links:
+    - https://twitter.com/tousifsays
+    - https://www.facebook.com/tousif111
+    - https://www.linkedin.com/in/mrsyed
+    - https://github.com/syed-ahmed
+
+plugins:
+  - jekyll-seo-tag
