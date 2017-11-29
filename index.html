@@ -335,7 +335,7 @@ layout: default
 
       </div>
       <div style="text-align:center;" class="mdl-card__actions mdl-card--border">
-          <button id="showButtonResearch" onclick="showDivs('moreResearch')" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          <button id="showButtonResearch" onclick="showDivs('moreResearch', 'showButtonResearch')" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
             SHOW MORE
           </button>
         </div>
@@ -396,5 +396,137 @@ layout: default
         </div>
         
       </div>
+    </div>
+</section>
+
+<section id="teachingSection" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+      <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+        <h4 class="mdl-cell mdl-cell--12-col">Teaching</h4>
+        <div class="section__text mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+          <h5>CMPE 789 Special Topics (Deep Learning) | Dr Ray Ptucha, RIT, Spring 2017</h5>
+          Authored homework assignment on TensorFlow.<br><br>
+        </div>
+        <div class="section__text mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+            <h5>Supplemental Instruction Leader | RIT, Spring 2015</h5>
+            - Supplemental Instruction Leader for Academic Support Center at RIT<br>
+            
+            - Conducted an hour long study session twice a week, through the last day of classes per semester, to guide students with historically difficult courses (courses with high rates of D, F and withdrawal)<br>
+            
+            - Planned and marketed SI Sessions through weekly session announcements in class and through email<br>
+            
+            - Engaged with faculty partner and devised SI session strategies using different learning techniques<br>
+            
+            - Attended weekly staff training, evaluated and reflected on SI sessions conducted by colleagues<br><br>
+        </div>
+        
+      </div>
+      
+    </div>
+</section>
+
+<section id="projectsSection" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+      <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+        <h4 class="mdl-cell mdl-cell--12-col">Projects</h4>
+        
+        <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+          <h5>Omen: An open source hardware/software co-design framework for developing hardware accelerators for machine intelligence (in progress)</h5>
+              - Writing Systolic/Wavefront Architecture in VHDL for RNNs<br>
+              - Writing Device API to support Deep Learning Frameworks in FPGA<br>
+          <br>
+          
+        </div>
+       
+        <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+          <h5>Real Time American Sign Language Video Captioning</h5>
+          - Implemented Sequence to Sequence Neural Network for
+          translating American Sign Language video to text. <br>
+          - Presented at
+          GPU Tech Conference 2017. See Talk above. <br>
+          <br>
+          <a href="https://github.com/syed-ahmed/seq2seq.git">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+                Code
+            </button>
+          </a>
+        </div>
+        
+        <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+            
+            <h5>Savage Valhalla: Building a Fast Autonomous Car</h5>
+            <h6><b>Syed Ahmed</b>, Jeff Barker, Christopher Ranc</h6>
+            - Autonomous RC car that can follow a white track bounded by two black lines on the side<br>
+            - Awarded second place on Imagine RIT Autonomous Car Competition Spring 2017<br>
+            - Used an ARM K64 board and concepts from microcontroller programming such as UART, PWM, etc. See details in the paper.<br><br>
+            
+            <img src="{{ " /images/valhalla.png " | prepend: site.baseurl }}" width="80%">
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5jy0JbbxlkE" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BF77ZOPg4lw" frameborder="0" allowfullscreen></iframe>
+          
+            <br>
+            <a href="{{ " /files/savage-valhalla-building " | prepend: site.baseurl }}">
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+                  Paper
+              </button>
+            </a>
+          </div>
+        
+        <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+          <h5>Open source contributions in Deep Learning Research</h5>
+          - Caffe2 - Solved several bugs in Seq2Seq. Commit #35dc34 <br>
+          - TensorFlow - Solved bug in Android Demo. Issue #1371 <br>
+          - TensorFlow - Implement Max Unpooling Op - Issue #2169 <br>
+          - elab/Torch7-profiling -Solved bug-Commit #7fdb7af and #0e64c08 <br>
+          - elab/ENet-Training - Improved code - Pull request #9<br>
+          <br>
+        </div>
+        
+        <div class="moreProject section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+          <h5>AResume</h5>
+          An Augmented Reality android app that gives an interactive resume
+          reviewing experience. Made using Unity3D, Vuforia SDK, and
+          Android Studio. <br>
+          <br>
+          <a href="https://www.goo.gl/RNB2Tx">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+                Google Play Store
+            </button>
+          </a>
+          <a href="https://github.com/syed-ahmed/AResume.git">
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+                Code
+          </button>
+          </a>
+        </div>
+        
+
+        
+        <div class="moreProject section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+          <h5>Click Wars - RIT iOS App Challenge Hackathon 2015</h5>
+          <h6><b>Syed Ahmed</b>, Towhidul Chowdhury</h6>
+          A game based app called “Click-Wars” that uses face detection and
+          bluetooth to connect multiple players to play a game of who can
+          click each others face faster.<br>
+          <br>
+          <a href="https://github.com/syed-ahmed/ClickWars-iOSApp">
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+                Code
+          </button>
+          </a>
+          <a href="http://www.goo.gl/4qX6sA">
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+                DevPost
+          </button>
+          </a>
+        </div>
+
+      </div>
+      <div style="text-align:center;" class="mdl-card__actions mdl-card--border">
+          <button id="showButtonProject" onclick="showDivs('moreProject', 'showButtonProject')" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            SHOW MORE
+          </button>
+        </div>
     </div>
 </section>

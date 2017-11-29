@@ -32,8 +32,8 @@
           window.location.protocol = "https";
   </script>
   <script>
-      function showDivs(which_div) {
-          var x = document.getElementsByClassName(which_div);
+      function showDivs(whichDiv, whichButton) {
+          var x = document.getElementsByClassName(whichDiv);
           var i;
           for (i = 0; i < x.length; i++) {
             if (x[i].style.display == "") {
@@ -43,7 +43,7 @@
             }
           }
           
-          var y = document.getElementById("showButtonResearch");
+          var y = document.getElementById(whichButton);
           if (y.innerText == "SHOW MORE"){
             y.innerText = "SHOW LESS";
           }else{

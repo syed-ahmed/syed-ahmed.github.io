@@ -377,3 +377,7 @@ html, body {
 .mdl-demo.mdl-demo .mdl-card__supporting-text .moreResearch {
   display: none;
 }
+
+.mdl-demo.mdl-demo .mdl-card__supporting-text .moreProject {
+  display: none;
+}
