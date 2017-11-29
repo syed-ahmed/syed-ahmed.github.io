@@ -313,6 +313,7 @@ html, body {
 .mdl-demo section .section__text a {
   text-decoration: none;
 }
+
 .mdl-demo section .section__circle-container > .section__circle-container__circle {
   width: 64px;
   height: 64px;
@@ -371,4 +372,8 @@ html, body {
 }
 .mdl-demo .mdl-menu__container {
   z-index: 99;
+}
+
+.mdl-demo.mdl-demo .mdl-card__supporting-text .moreResearch {
+  display: none;
 }
