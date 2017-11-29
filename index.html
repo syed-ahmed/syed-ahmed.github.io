@@ -340,24 +340,61 @@ layout: default
           </button>
         </div>
     </div>
-    <script>
-        function showDivs(which_div) {
-            var x = document.getElementsByClassName(which_div);
-            var i;
-            for (i = 0; i < x.length; i++) {
-              if (x[i].style.display == "") {
-                x[i].style.display = "block";
-              } else {
-                  x[i].style.display = "";
-              }
-            }
+</section>
+
+<section id="talksSection" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+      <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+        <h4 class="mdl-cell mdl-cell--12-col">Talks</h4>
+        <div class="section__circle-container mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone" style="padding: 10px;">
+            <img src="{{ " /images/western-ny-2017.jpg " | prepend: site.baseurl }}" width="80%">
             
-            var y = document.getElementById("showButtonResearch");
-            if (y.innerText == "SHOW MORE"){
-              y.innerText = "SHOW LESS";
-            }else{
-              y.innerText = "SHOW MORE";
-            }
-        }
-    </script>
+        </div>
+        <div class="section__text mdl-cell mdl-cell--4-col mdl-cell--1-col-phone">
+          <h5>TensorFlow Tutorial</h5>
+          <h6><b>Syed Ahmed</b></h6>
+          Invited Speaker, Western New York Image and Signal Processing Workshop 2017<br>
+          <br>
+          <a href="https://syed-ahmed.github.io/tensorflow-tutorial/">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+                Tutorial
+            </button>
+          </a>
+        </div>
+        <div class="section__circle-container mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone" style="padding: 10px;">
+            <video width="500" height="300" controls>
+                <source src="http://on-demand.gputechconf.com/gtc/2017/video/s7346-ahmed-real-time-american-sign-language-video-captioning-using-deep-neural-networks.mp4" type="video/mp4">
+                
+                Your browser does not support the video tag.
+              </video>
+        </div>
+        <div class="section__text mdl-cell mdl-cell--4-col mdl-cell--1-col-phone">
+          <h5>Real Time American Sign Language Video Captioning using Deep Neural Networks</h5>
+          <h6><b>Syed Ahmed</b></h6>
+          NVIDIA GPU Tech Conference 2017<br>
+          <br>
+          <a href="http://on-demand.gputechconf.com/gtc/2017/presentation/s7346-syed-ahmed-real-time-american-sign-language-video-caption.pdf">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+                Slides
+            </button>
+          </a>
+        </div>
+        <div class="section__circle-container mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone" style="padding: 10px;">
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QaoBXMu_l50" frameborder="0" allowfullscreen></iframe>          
+        </div>
+        <div class="section__text mdl-cell mdl-cell--4-col mdl-cell--1-col-phone">
+          <h5>Transfer Learning on Tensorflow in 30 minutes</h5>
+          <h6><b>Syed Ahmed</b></h6>
+          TensorFlow Boston Meetup, May 7 2016<br>
+          <br>
+          <a href="https://goo.gl/tvGR5q">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+                Slides
+            </button>
+          </a>
+        </div>
+        
+      </div>
+    </div>
 </section>
