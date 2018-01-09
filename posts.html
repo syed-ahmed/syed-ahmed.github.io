@@ -1,0 +1,21 @@
+--- 
+layout: default 
+---
+<div class="mdl-grid portfolio-max-width">
+            <table class="mdl-data-table mdl-cell--12-col mdl-shadow--16dp mdl-cell--4-col-phone mdl-js-data-table">
+                    
+                    <tbody>
+                            {% for post in site.posts %}
+                      <tr>
+                        
+                        <td class="mdl-data-table__cell--non-numeric">
+                            <h4>{{ post.date | date: "%B %e, %Y" }}</h4>
+                            <h3><a style="text-decoration: none;" href="{{ post.url }}">{{ post.title }}</a></h3>
+                            
+                        </td>
+                        
+                      </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+</div>
