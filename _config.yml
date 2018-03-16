@@ -19,7 +19,6 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://syed-ahmed.github.io"
 logo: /images/profile-pic1.jpg
-permalink: /blog/:date
 #baseurl: /~sxa1056
 # Build settings
 markdown: kramdown
@@ -35,3 +34,8 @@ social:
 
 plugins:
   - jekyll-seo-tag
+
+collections:
+  posts:
+    output: true
+    permalink: /posts/:pretty
