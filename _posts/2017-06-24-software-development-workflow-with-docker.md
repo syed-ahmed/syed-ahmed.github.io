@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Software Development Workflow with Docker"
+category: tech
 ---
 
 To best describe the motivation for writing this post let me describe the perspectives from two different people:

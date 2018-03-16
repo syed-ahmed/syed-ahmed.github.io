@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How to install TensorFlow on the NVIDIA Jetson TX2?"
+category: tech
 ---
 ### Introduction
 

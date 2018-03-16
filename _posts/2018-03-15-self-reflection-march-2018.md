@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Self Reflection 1 - Recovery"
+category: reflection
 published: true
 ---
 As my life is changing around a lot of different things,
