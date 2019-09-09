@@ -7,15 +7,14 @@
 
 # Site settings
 title: Syed Tousif Ahmed - Computer Engineer
-email: syed.ahmed.emails@gmail.com
+email: stahmed@seas.upenn.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Syed Tousif Ahmed is majoring in computer engineering at RIT and works 
-  there as a Research Assistant in the National Technical Institute for 
-  the Deaf. Syed's interests lie in high performance computing, machine 
-  intelligence, digital logic design, and cryptography. Syed worked on 
+  Syed Tousif Ahmed is a PhD Student in Electrical and Systems Engineering at UPenn.
+  Syed's interests lie in high performance computing, machine 
+  intelligence, digital logic design, compilers and cryptography. Syed worked on 
   several production and startup machine intelligence teams such as 
   NVIDIA, NextDroid LLC, and Ahold USA. He has contributed to several 
-  open source frameworks such as TensorFlow, Caffe2 and Torch. 
+  open source frameworks such as PyTorch and TensorFlow. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://syed-ahmed.github.io"
 logo: /images/profile-pic1.jpg

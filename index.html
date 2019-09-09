@@ -11,24 +11,23 @@ layout: default
           <div class="mdl-cell mdl-cell--8-col">
               <div id="cf4a" class="mdl-card__media">
                   <img src="{{ " images/profile-pic1.jpg " }}" style="border-radius: 50%" width="200px" height="200px">
-                  <img src="{{ " images/profile-pic2.jpg " }}" style="border-radius: 50%" width="200px" height="200px">
-                  <img src="{{ " images/profile-pic3.jpg " }}" style="border-radius: 50%" width="200px" height="200px">
-                  <img src="{{ " images/profile-pic4.jpg " }}" style="border-radius: 50%" width="200px" height="200px">
                 </div>
                 <br>
                 <br>
                 <div style="margin: auto;" class="mdl-card__supporting-text">
-                  <h2 class="mdl-card__title-text">Hi, I'm Tousif!</h2>
+                  <h2 class="mdl-card__title-text">Hi, I'm Syed!</h2>
                 </div>
                 <br>
                 <div style="margin: auto;" class="mdl-card__supporting-text">
                   I was born in Dhaka, Bangladesh. A very sweet place, has very beautiful rains and 2-3 hour long traffic jams. I was there
                   for the majority of my childhood and teenage years. In 2011, I moved to Kolkata, India to complete my Grade 11 and
                   12. Life there was quite dynamic and the place turned out to be very enriching for my personal development. Kolkata
-                  gave me life long friends and bitter and sweet memories. After Kolkata, now I am in Rochester, USA striving to become
-                  a Computer Engineer at Rochester Institute of Technology.
+                  gave me life long friends and bitter and sweet memories. After Kolkata, I moved to Rochester, NY, USA and completed my
+                  Bachelors in Computer Engineering from Rochester Institute of Technology. I spent a little more than a year at NVIDIA as
+                  a Software Engineer and contributed to PyTorch. I am currently pursuing a Ph.D in Electrical and
+                  Systems Engineering at UPenn, where I'm advised by Dr. Andre DeHon.
                   <br>
-                  <br> Academically, I love to investigate high performance computing, machine intelligence, digital logic design, and cryptography. 
+                  <br> Academically, I love to investigate high performance computing, machine intelligence, digital logic design, compilers and cryptography. 
                   Sounds too nerdy? Here are some more things – I love singing, playing the guitar, piano, percussion,
                   philosophy, poetry (middle eastern Sufi poets especially!), travelling, reflecting, sleeping, criticizing, eating,
                   observing people’s face and a lot of other things that you can discover about me if we ever spend some time together.
@@ -47,7 +46,7 @@ layout: default
                       {% include icon-twitter.svg %}
                     </button>
                   </a>
-                  <a style="text-decoration:none" href="mailto:syed.ahmed.emails@gmail.com">
+                  <a style="text-decoration:none" href="mailto:stahmed@seas.upenn.edu">
                     <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
                       {% include ic_mail_black_24px.svg %}
                     </button>
@@ -58,6 +57,16 @@ layout: default
             <div style="margin:5%;">
               <h4 class="mdl-card__title-text">News</h4>
               <ul style="overflow-y:scroll; height:600px;"class="demo-list-item mdl-list">
+                <li >
+                  <b>08/02/2019</b> Left job at NVIDIA to pursue Ph.D at UPenn
+                  <br>
+                  <br>
+                </li>
+                <li >
+                    <b>06/10/2018</b> Started full-time job at NVIDIA
+                    <br>
+                    <br>
+                </li>
                   <li >
                       <b>12/01/2017</b> Visiting UPenn
                       <br>
@@ -145,6 +154,20 @@ layout: default
     <div class="mdl-card mdl-cell mdl-cell--12-col">
       <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
         <h4 class="mdl-cell mdl-cell--12-col">Work Experience</h4>
+        <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+          <img src="{{ " images/nvidia.png " }}" width="80%">
+         </div>
+         <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+           <h5>Deep Learning Software Engineer | June 2018 - August 2019</h5>
+           <h6>NVIDIA Corporation | DL Frameworks Team | Santa Clara, CA</h6>
+           - Worked on different projects for PyTorch in the Deep Learning Frameworks Team
+           - Resolved several bugs and performance issues on both CPU and CUDA. Improved performance of several Random Number Generation kernels by upto 3x
+           - Participated in several code reviews and collaborated with third party contributors
+           - A full list of contributions can be seen <a href="https://github.com/pytorch/pytorch/commits?author=syed-ahmed">here</a>
+           - Managed Continuous Integration test environment and released NVIDIA GPU Cloud PyTorch docker container on a monthly basis
+           - Got into top 100 PyTorch contributors list within 7 months of joining the team and currently a module level maintainer of the CUDA backend
+           - Languages/Technologies used: C++, Python, CUDA, PyTorch, Docker
+         </div>
         <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
             <img src="{{ " images/cat.png " }}" width="80%">
         </div>
@@ -498,14 +521,6 @@ layout: default
     <div class="mdl-card mdl-cell mdl-cell--12-col">
       <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
         <h4 class="mdl-cell mdl-cell--12-col">Projects</h4>
-        
-        <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-          <h5>Omen: An open source hardware/software co-design framework for developing hardware accelerators for machine intelligence (in progress)</h5>
-              - Writing Systolic/Wavefront Architecture in VHDL for RNNs<br>
-              - Writing Device API to support Deep Learning Frameworks in FPGA<br>
-          <br>
-          
-        </div>
        
         <div class="section__text mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
           <h5>Real Time American Sign Language Video Captioning</h5>
