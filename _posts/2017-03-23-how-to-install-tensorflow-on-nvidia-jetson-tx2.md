@@ -5,11 +5,11 @@ category: tech
 ---
 ### Introduction
 
-The Jetson platform is specialized for doing inferences for deep learning projects. For instance, if you want to use a trained Google Inception model to recognize objects from your flying drone, putting the Jetson TX2 on that drone is a great idea. TensorFlow is becoming a standard library for writing these deep learning models. Hence, to live up to these standards, we would want TensorFlow to be running on this platform. However, the installation process is kinda difficult since, there is a lot of architecture specific definitions that are missing in the TensorFlow repository, as well as from the dependencies of TensorFlow such as Bazel, Protobuf etc. These issues are tracked in [Issue \# 851](https://github.com/tensorflow/tensorflow/issues/851), in [stackoverflow](http://stackoverflow.com/questions/39783919/tensorflow-on-nvidia-tx1/) and in [Jetson Hacks](https://github.com/jetsonhacks/installTensorFlowTX1). I applied the knowledge from those three links in the Jetson TX2 and following is a step by step procedure of that.
+The Jetson platform is specialized for doing inferences for deep learning projects. For instance, if you want to use a trained Google Inception model to recognize objects from your flying drone, putting the Jetson TX2 on that drone is a great idea. TensorFlow is becoming a standard library for writing these deep learning models. Hence, to live up to these standards, we would want TensorFlow to be running on this platform. However, the installation process is kinda difficult since, there is a lot of architecture specific definitions that are missing in the TensorFlow repository, as well as from the dependencies of TensorFlow such as Bazel, Protobuf etc. These issues are tracked in [Issue \# 851](https://github.com/tensorflow/tensorflow/issues/851), in [stackoverflow](https://stackoverflow.com/questions/39783919/tensorflow-on-nvidia-tx1/) and in [Jetson Hacks](https://github.com/jetsonhacks/installTensorFlowTX1). I applied the knowledge from those three links in the Jetson TX2 and following is a step by step procedure of that.
 
 ### Pre-requisites
 
-* Make sure you have gone through the Jetson TX2 setup process. If not, here is the [user guide](http://developer.download.nvidia.com/embedded/L4T/r27_Release_v1.0/Docs/Jetson_X2_Developer_Kit_User_Guide.pdf?autho=1490220307_7f6e498fde290aee44c5e648b5cfc8fd&file=Jetson_X2_Developer_Kit_User_Guide.pdf). I recommend flashing the system after you have unboxed it.
+* Make sure you have gone through the Jetson TX2 setup process. If not, here is the [user guide](https://developer.download.nvidia.com/embedded/L4T/r27_Release_v1.0/Docs/Jetson_X2_Developer_Kit_User_Guide.pdf?autho=1490220307_7f6e498fde290aee44c5e648b5cfc8fd&file=Jetson_X2_Developer_Kit_User_Guide.pdf). I recommend flashing the system after you have unboxed it.
 * Log in to the Jetson TX2 directly or via ssh.
 
 ### Steps
@@ -212,7 +212,7 @@ That's it. You are now ready to use tensorflow.
    E tensorflow/stream_executor/cuda/cuda_driver.cc:1002] failed to allocate 6.45G (6929413888 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
    {% endhighlight %}
 
-   Explanation: [http://stackoverflow.com/questions/34514324/error-using-tensorflow-with-gpu](http://stackoverflow.com/questions/34514324/error-using-tensorflow-with-gpu)
+   Explanation: [https://stackoverflow.com/questions/34514324/error-using-tensorflow-with-gpu](https://stackoverflow.com/questions/34514324/error-using-tensorflow-with-gpu)
 
 2. Issue:
 

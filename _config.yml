@@ -16,7 +16,7 @@ description: > # this means to ignore newlines until "baseurl:"
   NVIDIA, NextDroid LLC, and Ahold USA. He has contributed to several 
   open source frameworks such as PyTorch and TensorFlow. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://syed-ahmed.github.io"
+url: "https://syed-ahmed.github.io"
 logo: /images/profile-pic1.jpg
 permalink: /posts/:categories/:year/:month/:day/:title:output_ext
 #baseurl: /~sxa1056

@@ -157,11 +157,11 @@ Epoch: 1 Learning rate: 1.000
 0.104 perplexity: 856.644 speed: 1090 wps
 {% endhighlight %}
 
-Now let's make use of that exposed port using the following command and browsing to [http://localhost:6006](http://localhost:6006) in our local browser:
+Now let's make use of that exposed port using the following command and browsing to [https://localhost:6006](https://localhost:6006) in our local browser:
 
 {% highlight bash %}
 root@89ce92fb9880:~/workspace/tutorials/rnn/ptb£ tensorboard --logdir=./
-Starting TensorBoard 54 at http://89ce92fb9880:6006
+Starting TensorBoard 54 at https://89ce92fb9880:6006
 (Press CTRL+C to quit)
 {% endhighlight %}
 
