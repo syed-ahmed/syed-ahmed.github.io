@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Syed Tousif Ahmed',
   tagline: 'Software Engineer',
-  url: 'https://syed-ahmed.github.io',
+  url: 'https://syed.sh',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -53,7 +53,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://syed-ahmed.github.io/blog/rss.xml',
+            href: 'https://syed.sh/blog/rss.xml',
             label: 'RSS',
             position: 'right',
           },
