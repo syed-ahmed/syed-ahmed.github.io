@@ -5,23 +5,12 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero', styles.heroBanner)}>
-      <div className="container">
-      
-      </div>
-    </header>
-  );
-}
-
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Software Engineer">
       <main>
       <div class="card-demo-container">
       <div class="card-demo shadow--md">
@@ -30,8 +19,8 @@ export default function Home() {
     </div>
     <div class="card__image">
     <img style={{display: 'block', marginLeft: 'auto', marginRight: 'auto', width: 400}} src={require('@site/static/img/profile-pic2.png').default}
-          alt="Image alt text"
-          title="Logo Title Text 1"
+          alt="Picture of Syed"
+          title="Syed Ahmed"
         />
     </div>
     <div class="card__body">
