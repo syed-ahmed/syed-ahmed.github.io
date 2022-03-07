@@ -31,10 +31,10 @@ my engineering career in the HW/SW industry. <br></br><br></br>At work I love to
       </div>
     <div class="card__footer">
       <div class="button-group button-group--block">
-        <button class="button button--secondary">CV</button>
-        <button class="button button--secondary">LinkedIn</button>
-        <button class="button button--secondary">GitHub</button>
-        <button class="button button--secondary">Twitter</button>
+        <a href="" class="button button--secondary" >Resume</a>
+        <a href="https://www.linkedin.com/in/mrsyed/" class="button button--secondary">LinkedIn</a>
+        <a href="https://github.com/syed-ahmed" class="button button--secondary">GitHub</a>
+        <a href="https://twitter.com/tousifsays" class="button button--secondary">Twitter</a>
       </div>
     </div>
   </div>
