@@ -27,6 +27,10 @@ const config = {
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Syed Tousif Ahmed.`,
+          },
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
