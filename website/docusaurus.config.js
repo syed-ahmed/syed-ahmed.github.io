@@ -24,17 +24,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/syed-ahmed/syed-ahmed.github.io/blob/main/website',
         },
         blog: {
-          feedOptions: {
-            type: 'all',
-            copyright: `Copyright © ${new Date().getFullYear()} Syed Tousif Ahmed.`,
-          },
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/syed-ahmed/syed-ahmed.github.io/blob/main/website',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
