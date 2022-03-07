@@ -57,7 +57,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://syed-ahmed.github.io/rss.xml',
+            href: 'https://syed-ahmed.github.io/blog/rss.xml',
             label: 'RSS',
             position: 'right',
           },
