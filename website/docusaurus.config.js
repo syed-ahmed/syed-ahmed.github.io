@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Syed Tousif Ahmed',
-  tagline: 'Computer Engineer',
+  tagline: 'Software Engineer',
   url: 'https://syed-ahmed.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',

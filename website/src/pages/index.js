@@ -8,9 +8,7 @@ import styles from './index.module.css';
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Software Engineer">
+    <Layout>
       <main>
       <div class="card-demo-container">
       <div class="card-demo shadow--md">
