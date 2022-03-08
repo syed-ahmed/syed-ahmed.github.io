@@ -24,13 +24,14 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/syed-ahmed/syed-ahmed.github.io/blob/main/website',
+          editUrl: ({versionDocsDirPath, docPath}) =>
+            `https://github.com/syed-ahmed/syed-ahmed.github.io/blob/main/website/${versionDocsDirPath}/${docPath}?plain=1`,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/syed-ahmed/syed-ahmed.github.io/blob/main/website',
+          editUrl: ({blogDirPath, blogPath}) =>
+            `https://github.com/syed-ahmed/syed-ahmed.github.io/blob/main/website/${blogDirPath}/${blogPath}?plain=1`,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
