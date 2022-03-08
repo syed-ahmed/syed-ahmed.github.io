@@ -32,8 +32,9 @@ git clone --branch llvmorg-12.0.0 https://github.com/llvm/llvm-project
 cd llvm-project
 mkdir build
 cd build
-env CC=`which clang` CXX=`which clang++` \
 cmake -G Ninja \
+	  -DCMAKE_C_COMPILER=clang \
+	  -DCMAKE_CXX_COMPILER=clang++ \
 	  -DLLVM_ENABLE_PROJECTS=clang \
 	  -DCMAKE_BUILD_TYPE=RelWithDebInfo \
 	  -DLLVM_USE_LINKER=lld \
