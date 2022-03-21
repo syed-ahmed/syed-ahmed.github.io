@@ -68,6 +68,13 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      algolia: {
+        appId: 'EM2ME1087F',
+        apiKey: '6fe0ee9efd0343dde4d6eed7f98b5f59',
+        indexName: 'syed',
+        contextualSearch: true,
+        searchPagePath: 'search',
+      },
     }),
 };
 
