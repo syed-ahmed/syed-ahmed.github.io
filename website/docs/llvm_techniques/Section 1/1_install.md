@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Installing LLVM
 
 ## Host Machine
@@ -41,6 +37,7 @@ cmake -G Ninja \
 	  -DLLVM_TARGETS_TO_BUILD="X86" \
 	  -DBUILD_SHARED_LIBS=ON \
 	  -DLLVM_OPTIMIZED_TABLEGEN=ON \
+	  -DLLVM_USE_NEWPM=ON \
 	  ../llvm
 ninja -j8
 ninja check-all
