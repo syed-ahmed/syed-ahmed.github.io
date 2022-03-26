@@ -27,12 +27,19 @@ export default function ViewPDF({ pdf }) {
 
   return (
     <>
-      <Document
-        file={pdf}
-        onLoadSuccess={onDocumentLoadSuccess}
-      >
-        <Page scale={1.5} pageNumber={pageNumber} />
-      </Document>
+      <div >
+        <a href={pdf} class="button button--primary" >Download PDF</a>
+      </div>
+      <div class="card-demo-container">
+        <div class="shadow--md">
+          <Document
+            file={pdf}
+            onLoadSuccess={onDocumentLoadSuccess}
+          >
+            <Page scale={1.5} pageNumber={pageNumber} />
+          </Document>
+        </div>
+      </div>
       <nav class="pagination-nav">
         <div class="pagination-nav__item">
           <button
