@@ -210,9 +210,24 @@
 - Interpreted as ints, so can compare different enums or pass wrong enum types.
 
 ### Structs
+- Encapsulate one or more types
+- Module interface file (.cppm)
+  - First line is module declaration, states that file is defining a module.
+  - explicitly export.
+  - Example:
+    ```cpp
+    export module employee;
+    export struct Employee {
+      ...
+    };
+    ```
+  - Angle brackets must not be used when importing modules.
 
 ### Conditional Statements
+Two types on conditional statments in C++.
+
 #### if/else Statements
+
 #### switch Statements
 
 ### The Conditional Operator
