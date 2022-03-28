@@ -198,7 +198,7 @@
 - By default, enum value is an integer. Can change it, e.g. `enum class MyEnum: unsigned long {...}`
 - Enum values not automatically exported to enclosing scope, useful for giving short names to enum values.
 - Have to fully qualify enum values or use a `using enum` or `using`.
-- C++20, can use `using enum MyEnum`. Minimize the scope when using this, so that name clashes are avoiided.
+- C++20, can use `using enum MyEnum`. Minimize the scope when using this, so that name clashes are avoided.
 
 #### Old-style Enumerated Types
 - `enum` instead of `enum class`.
