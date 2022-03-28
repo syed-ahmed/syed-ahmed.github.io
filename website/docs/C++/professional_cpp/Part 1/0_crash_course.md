@@ -224,7 +224,7 @@
   - Angle brackets must not be used when importing modules.
 
 ### Conditional Statements
-Two types on conditional statments in C++.
+Two types on conditional statements in C++.
 
 #### if/else Statements
 
