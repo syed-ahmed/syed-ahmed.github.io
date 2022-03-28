@@ -76,6 +76,7 @@ const config = {
         searchPagePath: 'search',
       },
     }),
+  plugins: [require.resolve("@syed-ahmed/docusaurus-plugin-react-pdf")],
 };
 
 module.exports = config;
