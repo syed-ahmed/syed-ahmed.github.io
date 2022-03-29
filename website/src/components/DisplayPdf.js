@@ -4,14 +4,17 @@ import ReactPdf from '@syed-ahmed/docusaurus-plugin-react-pdf/lib/theme/ReactPdf
 export default function DisplayPdf({pdf}) {
 	const [numPages, setNumPages] = React.useState(null);
   	const [pageNumber, setPageNumber] = React.useState(1);
+	const documentWrapperRef = React.useRef(null);
+
 	return (
 		<>
 		<div >
 		  <a href={pdf} className="button button--primary" >Download PDF</a>
 		</div>
-		<div className="card-demo-container">
+		<div ref={documentWrapperRef} className="card-demo-container">
 		  <div className="shadow--md">
 		  <ReactPdf pdf={pdf}
+		  	documentWrapperRef={documentWrapperRef}
 		  	numPages={numPages}
 			setNumPages={setNumPages}
 			pageNumber={pageNumber}
