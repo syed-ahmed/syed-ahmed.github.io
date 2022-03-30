@@ -31,7 +31,8 @@ cd build
 cmake -G Ninja \
 	  -DCMAKE_C_COMPILER=clang \
 	  -DCMAKE_CXX_COMPILER=clang++ \
-	  -DLLVM_ENABLE_PROJECTS=clang \
+	  -DLLVM_ENABLE_PROJECTS="clang;compiler-rt" \
+	  -DLLVM_ENABLE_RUNTIMES="compiler-rt" \
 	  -DCMAKE_BUILD_TYPE=RelWithDebInfo \
 	  -DLLVM_USE_LINKER=lld \
 	  -DLLVM_TARGETS_TO_BUILD="X86" \
