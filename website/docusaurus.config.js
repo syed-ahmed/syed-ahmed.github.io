@@ -43,7 +43,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      autoCollapseSidebarCategories: true,
       hideableSidebar: true,
       navbar: {
         title: 'Syed Tousif Ahmed',
