@@ -36,7 +36,7 @@ read more data.
 	hbtype = *p++;
 	n2s(p, payload);
 	if (1 + 2 + payload + 16 > ...) // “...” is received message’s length
-	return 0;  // silently discard per RFC 6520 sec. 4
+		return 0;  // silently discard per RFC 6520 sec. 4
 	pl = p;
 	```
 - Automatically discover using dynamic/static analysis.
@@ -63,12 +63,12 @@ Sanitizer errors out memcpy.
 		return err;
 	}
 	```
-- Second `goto fail` is not unconditional.
+- Second `goto fail` is unconditional.
 - `sslRawVerify` is bypassed.
-- Overall function returns successful even when it's not.
+- `SSLVerifySignedServerKeyExchange` function returns successful even when it's not.
 - Attacker can do man-in-the-middle attack.
 - Automatically detect bug using static analysis.
-- Unreachable code analysis: reveal portion of code unreachable after the second goto statement.
+- Unreachable code analysis: can reveal portion of code unreachable after the second goto statement.
 
 ## Case Study 3: VLC Media Player Dependency Bug CVE-2019-13615
 - Heap-based buffer over-read in EBML component that parses media types.
@@ -80,7 +80,7 @@ Sanitizer errors out memcpy.
 	do {
 		...
 		if (DataStream.read(&PossibleIdNSize[ReadIndex++], 1) == 0) {
-		return NULL;
+			return NULL;
 		}
 		ReadSize++;
 		...
@@ -94,10 +94,10 @@ Sanitizer errors out memcpy.
 		...
 		// highlight-start
 		if (MaxDataSize <= ReadSize)
-		break;
+			break;
 		// highlight-end
 		if (DataStream.read(&PossibleIdNSize[ReadIndex++], 1) == 0) {
-		return NULL;
+			return NULL;
 		}
 		ReadSize++;
 		...
