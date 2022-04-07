@@ -227,6 +227,34 @@
 Two types on conditional statements in C++.
 
 #### if/else Statements
+- Expression inside parenthesis must be a boolean.
+- Value of 0 evaluates to `false`, non-zero is `true`.
+- ```cpp
+  if (<condition 1>) {
+    
+  } else if (<condition 2>) {
+
+  } else {
+
+  }
+  ```
+##### Initializers for if Statements
+- Can include initializer inside an if statement.
+- Syntax:
+  ```cpp
+  if (<initializer>; <conditional>) {
+    ...
+  } else if (...) {
+    ...
+  } else {
+    ...
+  }
+  ```
+- Variable in the initializer available to all the other parts of the if statement  (also other places in a cascaded if statements). Initializer variables not available anywhere else.
+- Example:
+  ```cpp
+  if (Employee employee { getEmployee() }; employee.salary > 1000) { ... }
+  ```
 
 #### switch Statements
 
