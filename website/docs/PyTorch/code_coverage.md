@@ -1,5 +1,5 @@
 # Getting code coverage info in PyTorch
-- Build pytorch from source:
+- Build pytorch from source with the necessary flags for coverage - `-DUSE_CPP_CODE_COVERAGE=ON -DBUILD_TEST=ON -DCMAKE_BUILD_TYPE=Debug`:
     - If using GCC:
         ```bash
         python setup.py build --cmake-only

@@ -1,4 +1,5 @@
-# Code Coverage with g++ and lcov
+# Code Coverage 
+## With g++ and lcov
 - Compile with no optimization: `-O0 --coverage`. Will output `*.gcno`.
 - Run the binary. Will output `*.gcda`.
 - Generate lcov trace from the directory with `*.gcda`s:
@@ -11,5 +12,5 @@
     ```
 - Note: you need the `rc` flags to show branch coverage.
 
-# Code Coverage with clang
+## With clang and llvm-cov
 - Follow the instructions in: https://clang.llvm.org/docs/SourceBasedCodeCoverage.html
