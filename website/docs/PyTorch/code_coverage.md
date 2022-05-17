@@ -20,10 +20,11 @@
 - Run `pytorch/tools/code_coverage/oss_coverage.py`:
     - If using GCC:
         ```bash
-        python oss_coverage.py --run-only=test_jit --export --summary
+        python oss_coverage.py --export --summary
         ```
     - If using clang:
         ```bash
-        CXX=clang++ LLVM_TOOL_PATH=/usr/lib/llvm-12/bin/ python oss_coverage.py --run-only=test_jit
+        CXX=clang++ LLVM_TOOL_PATH=/usr/lib/llvm-12/bin/ python oss_coverage.py
         /usr/lib/llvm-12/bin/llvm-cov show -output-dir=out/report -format=html -instr-profile=/home/syeahmed/workspace/pytorch/tools/code_coverage/package/util/../../profile/merged/test_jit.merged -object /home/syeahmed/workspace/pytorch/build/bin/test_jit
         ```
+    - Use `--run-only` and `--interest-only` options to create focused reports ([README](https://github.com/pytorch/pytorch/blob/master/tools/code_coverage/README.md))
