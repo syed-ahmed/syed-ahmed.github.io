@@ -4,7 +4,8 @@
         ```bash
         python setup.py build --cmake-only
         cd build && \
-            cmake .. -DUSE_CPP_CODE_COVERAGE=ON -DBUILD_TEST=ON -DCMAKE_BUILD_TYPE=Debug
+            cmake .. -DUSE_CPP_CODE_COVERAGE=ON -DBUILD_TEST=ON -DCMAKE_BUILD_TYPE=Debug && \
+            cd ../
         MAX_JOBS=8 python setup.py develop
         ```
     - If using clang:
@@ -14,7 +15,8 @@
         sudo ln -s /usr/bin/clang-12 /usr/bin/clang
         CC=clang CXX=clang++ python setup.py build --cmake-only
         cd build && \
-            cmake .. -DUSE_CPP_CODE_COVERAGE=ON -DBUILD_TEST=ON -DCMAKE_BUILD_TYPE=Debug
+            cmake .. -DUSE_CPP_CODE_COVERAGE=ON -DBUILD_TEST=ON -DCMAKE_BUILD_TYPE=Debug && \
+            cd ../
         MAX_JOBS=8 python setup.py develop
         ```
 - Run `pytorch/tools/code_coverage/oss_coverage.py`:
