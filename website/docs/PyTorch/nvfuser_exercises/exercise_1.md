@@ -4,7 +4,6 @@ In this exercise we will:
 - Lower TorchScript IR to nvFuser Fusion IR using `torch::jit::fuser::cuda::parseJitIR`.
 - Print the Fusion IR, understand `parseJitIR` and nvFuser basics.
 
-# Solution
 ## Reading TorchScript IR
 In these set of exercises, it doesn't really matter why we are using TorchScript as the input.
 We want to focus on nvFuser Fusion IR and we can get to Fusion IR from TorchScript IR quickly.
