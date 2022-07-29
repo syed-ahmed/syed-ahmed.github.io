@@ -10,6 +10,7 @@ In these set of exercises, it doesn't really matter why we are using TorchScript
 We want to focus on nvFuser Fusion IR and we can get to Fusion IR from TorchScript IR quickly.
 - Create a C++ source file and start adding the
 necessary headers:
+
     ```cpp
     #include <torch/csrc/jit/ir/ir.h>
     #include <torch/csrc/jit/ir/irparser.h>
@@ -17,10 +18,12 @@ necessary headers:
     #include <iostream>
     ```
 - Create a graph object:
+
     ```cpp
     auto g = torch::jit::Graph();
     ```
 - Parse a TorchScript IR into the graph object:
+
     ```cpp
     const auto graph_str = R"IR(
         graph(%0 : Float(8, 256, 56, 56, strides=[802816, 3136, 56, 1], requires_grad=0, device=cuda:0),
@@ -45,21 +48,25 @@ necessary headers:
     torch::jit::parseIR(graph_str, &g);
     ```
 - Print the graph to convince yourself that the parser did its job:
+
     ```cpp
     std::cout << g << std::endl;
     ```
 
 ## Lower to Fusion IR
 - First, add the necessary header to use `parseJitIR` and `FusionGuard`:
+
     ```cpp
     #include <torch/csrc/jit/codegen/cuda/executor.h>
     #include <torch/csrc/jit/codegen/cuda/parser.h>
     ```
 - We'll need to make some changes to how we created the graph object. `parseJitIR` expects a `shared_ptr` object. So we'll change our graph creation accordingly:
+
     ```cpp
     auto g = std::make_shared<torch::jit::Graph>();
     ```
 - Now we can lower TorchScript IR to Fusion IR and print:
+
     ```cpp
     auto fusion = torch::jit::fuser::cuda::parseJitIR(g);
     torch::jit::fuser::cuda::FusionGuard fg(fusion.get());
