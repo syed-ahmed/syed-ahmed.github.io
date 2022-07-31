@@ -34,8 +34,8 @@ export default function Home() {
                   from RIT. I spent a little more than a year at
                   NVIDIA as a Software Engineer and contributed to PyTorch. I have recently
                   finished my Master's
-                  in Electrical Engineering from UPenn and am looking forward to continuing
-                  my engineering career in the HW/SW industry. <br></br><br></br>At work I
+                  in Electrical Engineering from UPenn, and am back at NVIDIA to continue
+                  from where I left off. <br></br><br></br>At work I
                   love to investigate high performance computing, machine intelligence,
                   digital logic design, compilers and cryptography. When not at work, I
                   love to do scuba diving, whitewater rafting, singing, salsa dancing,
