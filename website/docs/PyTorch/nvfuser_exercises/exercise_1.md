@@ -5,17 +5,16 @@ In this exercise we will:
 - Print the Fusion IR, understand `parseJitIR` and nvFuser basics.
 
 ## Reading TorchScript IR
-In these set of exercises, it doesn't really matter why we are using TorchScript as the input.
-We want to focus on nvFuser Fusion IR and we can get to Fusion IR from TorchScript IR quickly.
+In these set of exercises, it doesn't really matter why we are using TorchScript as the input. We want to focus on nvFuser Fusion IR and we can get to Fusion IR from TorchScript IR quickly.
 
-- Create a C++ source file and start adding the
-necessary headers:
-	```cpp
-	#include <torch/csrc/jit/ir/ir.h>
-	#include <torch/csrc/jit/ir/irparser.h>
+- Create a C++ source file and start adding the necessary headers:
 
-	#include <iostream>
-	```
+    ```cpp
+    #include <torch/csrc/jit/ir/ir.h>
+    #include <torch/csrc/jit/ir/irparser.h>
+
+    #include <iostream>
+    ```
 - Create a graph object:
 
     ```cpp
