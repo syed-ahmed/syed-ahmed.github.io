@@ -10,12 +10,12 @@ We want to focus on nvFuser Fusion IR and we can get to Fusion IR from TorchScri
 
 - Create a C++ source file and start adding the
 necessary headers:
-    ```cpp
-    #include <torch/csrc/jit/ir/ir.h>
-    #include <torch/csrc/jit/ir/irparser.h>
+	```cpp
+	#include <torch/csrc/jit/ir/ir.h>
+	#include <torch/csrc/jit/ir/irparser.h>
 
-    #include <iostream>
-    ```
+	#include <iostream>
+	```
 - Create a graph object:
 
     ```cpp
