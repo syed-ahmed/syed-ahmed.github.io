@@ -12,7 +12,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v2
         with:
-          node-version: "16"
+          node-version: "18"
 
       - name: Build
         run: |
@@ -20,7 +20,7 @@ jobs:
           yarn install && yarn build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        uses: JamesIves/github-pages-deploy-action@v4.6.8
         with:
           branch: gh-pages
           folder: ./website/build
