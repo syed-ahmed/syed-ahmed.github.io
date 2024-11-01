@@ -32,12 +32,12 @@ export default function Home() {
                   friends and bitter and sweet memories. <br></br><br></br> After Kolkata,
                   I moved to Rochester, NY and completed my Bachelors in Computer Engineering
                   from RIT. I spent a little more than a year at
-                  NVIDIA as a Software Engineer and contributed to PyTorch. I have recently
+                  NVIDIA as a Software Engineer and contributed to PyTorch. I
                   finished my Master's
                   in Electrical Engineering from UPenn, and am back at NVIDIA to continue
                   from where I left off. <br></br><br></br>At work I
-                  love to investigate high performance computing, machine intelligence,
-                  digital logic design, compilers and cryptography. When not at work, I
+                  love to investigate high performance computing, machine learning,
+                  digital logic design, compilers and optimization methods. When not at work, I
                   love to do scuba diving, whitewater rafting, singing, salsa dancing,
                   playing guitar-piano-percussions, and travelling. <br></br><br></br>
                   
