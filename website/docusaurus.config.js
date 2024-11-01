@@ -67,8 +67,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Syed Tousif Ahmed.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: lightTheme,
+        darkTheme: darkTheme,
         additionalLanguages: ['llvm'],
       },
       algolia: {
