@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[870],{1495:e=>{e.exports=JSON.parse('{"label":"vivado","permalink":"/blog/tags/vivado","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5564],{6869:e=>{e.exports=JSON.parse('{"label":"fpga","permalink":"/blog/tags/fpga","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);

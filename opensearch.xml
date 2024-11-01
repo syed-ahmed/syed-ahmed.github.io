@@ -4,8 +4,8 @@
   <ShortName>Syed Tousif Ahmed</ShortName>
   <Description>Search Syed Tousif Ahmed</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://syed.sh/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://syed.sh/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://syed.sh/opensearch.xml" />
-  <moz:SearchForm>https://syed.sh/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://syed-ahmed.ai/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://syed-ahmed.ai/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://syed-ahmed.ai/opensearch.xml" />
+  <moz:SearchForm>https://syed-ahmed.ai/</moz:SearchForm>
 </OpenSearchDescription>
